@@ -1,15 +1,7 @@
 package br.ifba.edu.inf011.command;
-
 import java.util.ArrayDeque;
 import java.util.Deque;
-
-/**
- * Invoker + Caretaker (Questão II)
- *
- * Mantém pilhas de desfazer/refazer e registra logs.
- */
 public class GerenciadorComandos {
-
     private final Deque<DocumentoCommand> undoStack;
     private final Deque<DocumentoCommand> redoStack;
     private final RegistradorOperacoesArquivo logger;
