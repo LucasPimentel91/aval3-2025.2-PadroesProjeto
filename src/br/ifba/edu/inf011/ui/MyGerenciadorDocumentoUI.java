@@ -4,36 +4,45 @@ import br.ifba.edu.inf011.af.DocumentOperatorFactory;
 import br.ifba.edu.inf011.model.FWDocumentException;
 import br.ifba.edu.inf011.model.documentos.Privacidade;
 public class MyGerenciadorDocumentoUI extends AbstractGerenciadorDocumentosUI {
-
     public MyGerenciadorDocumentoUI(DocumentOperatorFactory factory) {
         super(factory);
     }
+    @Override
     protected JPanelOperacoes montarMenuOperacoes() {
         JPanelOperacoes comandos = new JPanelOperacoes();
-        comandos.addOperacao("➕ Criar Publico", e -> this.criarDocumentoPublico());
-        comandos.addOperacao("➕ Criar Privado", e -> this.criarDocumentoPrivado());
+        comandos.addOperacao("➕ Criar Publico", e -> this.criarDocumento(Privacidade.PUBLICO));
+        comandos.addOperacao("➕ Criar Privado", e -> this.criarDocumento(Privacidade.SIGILOSO));
         comandos.addOperacao("💾 Salvar", e -> this.salvarConteudo());
         comandos.addOperacao("🔑 Proteger", e -> this.protegerDocumento());
         comandos.addOperacao("✍️ Assinar", e -> this.assinarDocumento());
-        comandos.addOperacao("⏰ Urgente", e -> this.tornarUrgente());
+        comandos.addOperacao("⏰ Priorizar", e -> this.priorizarDocumento());
+        comandos.addOperacao("↩ Desfazer", e -> this.desfazer());
+        comandos.addOperacao("↪ Refazer", e -> this.refazer());
+        comandos.addOperacao("🧹 Consolidar", e -> this.consolidar());
+
         return comandos;
     }
-    protected void criarDocumentoPublico() {
-        this.criarDocumento(Privacidade.PUBLICO);
+    private void criarDocumento(Privacidade privacidade) {
+        try {
+            int tipoIndex = this.barraSuperior.getTipoSelecionadoIndice();
+            this.atual = this.controller.criarDocumento(tipoIndex, privacidade);
+            this.barraDocs.addDoc(this.atual);
+            this.refreshUI();
+        } catch (FWDocumentException e) {
+            JOptionPane.showMessageDialog(this, "Erro ao criar documento: " + e.getMessage());
+        }
     }
 
-    protected void criarDocumentoPrivado() {
-        this.criarDocumento(Privacidade.SIGILOSO);
-    }
     protected void salvarConteudo() {
         try {
             this.controller.salvarDocumento(this.atual, this.areaEdicao.getConteudo());
             this.atual = this.controller.getDocumentoAtual();
             this.refreshUI();
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(this, "Erro ao Salvar: " + e.getMessage());
+            JOptionPane.showMessageDialog(this, "Erro ao salvar: " + e.getMessage());
         }
     }
+
     protected void protegerDocumento() {
         try {
             this.controller.protegerDocumento(this.atual);
@@ -52,23 +61,36 @@ public class MyGerenciadorDocumentoUI extends AbstractGerenciadorDocumentosUI {
             JOptionPane.showMessageDialog(this, "Erro ao assinar: " + e.getMessage());
         }
     }
-    protected void tornarUrgente() {
+    protected void priorizarDocumento() {
         try {
-            this.controller.tornarUrgente(this.atual);
+            this.controller.macroPriorizar(this.atual);
             this.atual = this.controller.getDocumentoAtual();
             this.refreshUI();
-        } catch (FWDocumentException e) {
-            JOptionPane.showMessageDialog(this, "Erro ao tornar urgente: " + e.getMessage());
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Erro ao priorizar: " + e.getMessage());
         }
     }
-    private void criarDocumento(Privacidade privacidade) {
+    protected void desfazer() {
         try {
-            int tipoIndex = this.barraSuperior.getTipoSelecionadoIndice();
-            this.atual = this.controller.criarDocumento(tipoIndex, privacidade);
-            this.barraDocs.addDoc(this.atual);
+            this.controller.undo();
+            this.atual = this.controller.getDocumentoAtual();
             this.refreshUI();
-        } catch (FWDocumentException e) {
-            JOptionPane.showMessageDialog(this, "Erro: " + e.getMessage());
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Não foi possível desfazer: " + e.getMessage());
         }
+    }
+    protected void refazer() {
+        try {
+            this.controller.redo();
+            this.atual = this.controller.getDocumentoAtual();
+            this.refreshUI();
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Não foi possível refazer: " + e.getMessage());
+        }
+    }
+    protected void consolidar() {
+        this.controller.consolidate();
+        this.atual = this.controller.getDocumentoAtual();
+        this.refreshUI();
     }
 }
