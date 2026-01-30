@@ -1,32 +1,55 @@
 package br.ifba.edu.inf011.ui;
 import java.awt.BorderLayout;
+import java.awt.Component;
 import java.awt.Dimension;
 import javax.swing.BorderFactory;
+import javax.swing.DefaultListCellRenderer;
 import javax.swing.DefaultListModel;
 import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.ListSelectionModel;
-import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-@SuppressWarnings("unused")
-public class JPanelListaDocumentos<T> extends JPanel{
-	private JList<T> listDocumentos;
-	public JPanelListaDocumentos(DefaultListModel<T> listModel, ListSelectionListener listener) {
-		super(new BorderLayout());
-		this.listDocumentos = new JList<T>(listModel);
-		this.listDocumentos.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-		this.listDocumentos.setPreferredSize(new Dimension(200, 0));
-		this.listDocumentos.setBorder(BorderFactory.createTitledBorder("Documentos"));
-		this.listDocumentos.addListSelectionListener(listener);
-		this.add(this.listDocumentos, BorderLayout.CENTER);
-	}
-	public void addDoc(T doc) {
-		DefaultListModel<T> model = (DefaultListModel<T>)this.listDocumentos.getModel(); 
+import br.ifba.edu.inf011.model.documentos.Documento;
+public class JPanelListaDocumentos<T> extends JPanel {
+    private final JList<T> listDocumentos;
+    public JPanelListaDocumentos(DefaultListModel<T> listModel, ListSelectionListener listener) {
+        super(new BorderLayout());
+
+        this.listDocumentos = new JList<>(listModel);
+        this.listDocumentos.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        this.listDocumentos.setPreferredSize(new Dimension(200, 0));
+        this.listDocumentos.setBorder(BorderFactory.createTitledBorder("Documentos"));
+        this.listDocumentos.addListSelectionListener(listener);
+        this.listDocumentos.setCellRenderer(new DefaultListCellRenderer() {
+            @Override
+            public Component getListCellRendererComponent(
+                    JList<?> list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
+
+                String texto;
+
+                if (value instanceof Documento doc) {
+                    texto = "[" + doc.getNumero() + "]";
+                    if (doc.isUrgente()) {
+                        texto = "[URGENTE] " + texto;
+                    }
+                } else {
+                    texto = String.valueOf(value);
+                }
+
+                return super.getListCellRendererComponent(list, texto, index, isSelected, cellHasFocus);
+            }
+        });
+
+        this.add(this.listDocumentos, BorderLayout.CENTER);
+    }
+
+    public void addDoc(T doc) {
+        DefaultListModel<T> model = (DefaultListModel<T>) this.listDocumentos.getModel();
         model.addElement(doc);
         this.listDocumentos.setSelectedIndex(model.size() - 1);
-        this.updateUI();
-	}
-	public int getIndiceDocSelecionado() {
-		return this.listDocumentos.getSelectedIndex();
-	}
+        this.repaint();
+    }
+    public int getIndiceDocSelecionado() {
+        return this.listDocumentos.getSelectedIndex();
+    }
 }
