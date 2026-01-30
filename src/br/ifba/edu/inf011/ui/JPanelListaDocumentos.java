@@ -11,7 +11,9 @@ import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionListener;
 import br.ifba.edu.inf011.model.documentos.Documento;
 public class JPanelListaDocumentos<T> extends JPanel {
+
     private final JList<T> listDocumentos;
+
     public JPanelListaDocumentos(DefaultListModel<T> listModel, ListSelectionListener listener) {
         super(new BorderLayout());
 
@@ -26,9 +28,9 @@ public class JPanelListaDocumentos<T> extends JPanel {
                     JList<?> list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
 
                 String texto;
-
                 if (value instanceof Documento doc) {
-                    texto = "[" + doc.getNumero() + "]";
+                    String numero = doc.getNumero();
+                    texto = "[" + (numero == null ? "SEM-NUMERO" : numero) + "]";
                     if (doc.isUrgente()) {
                         texto = "[URGENTE] " + texto;
                     }
@@ -42,13 +44,23 @@ public class JPanelListaDocumentos<T> extends JPanel {
 
         this.add(this.listDocumentos, BorderLayout.CENTER);
     }
-
     public void addDoc(T doc) {
         DefaultListModel<T> model = (DefaultListModel<T>) this.listDocumentos.getModel();
         model.addElement(doc);
         this.listDocumentos.setSelectedIndex(model.size() - 1);
         this.repaint();
     }
+
+    public void updateDoc(int index, T doc) {
+        DefaultListModel<T> model = (DefaultListModel<T>) this.listDocumentos.getModel();
+
+        if (index >= 0 && index < model.size()) {
+            model.set(index, doc);
+            this.listDocumentos.setSelectedIndex(index);
+            this.repaint();
+        }
+    }
+
     public int getIndiceDocSelecionado() {
         return this.listDocumentos.getSelectedIndex();
     }
