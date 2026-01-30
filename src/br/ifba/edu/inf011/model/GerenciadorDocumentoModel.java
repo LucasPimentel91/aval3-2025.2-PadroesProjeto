@@ -1,29 +1,27 @@
 package br.ifba.edu.inf011.model;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 import br.ifba.edu.inf011.af.DocumentOperatorFactory;
-import br.ifba.edu.inf011.command.GerenciadorComandos;
-import br.ifba.edu.inf011.command.ComandoEditarConteudo;
-import br.ifba.edu.inf011.command.RegistradorOperacoesArquivo;
-import br.ifba.edu.inf011.command.ComandoMacro;
-import br.ifba.edu.inf011.command.ComandoProteger;
 import br.ifba.edu.inf011.command.ComandoAssinar;
+import br.ifba.edu.inf011.command.ComandoEditarConteudo;
+import br.ifba.edu.inf011.command.ComandoMacro;
 import br.ifba.edu.inf011.command.ComandoMarcarUrgente;
+import br.ifba.edu.inf011.command.ComandoProteger;
+import br.ifba.edu.inf011.command.GerenciadorComandos;
+import br.ifba.edu.inf011.command.RegistradorOperacoesArquivo;
 import br.ifba.edu.inf011.memento.DocumentoMemento;
 import br.ifba.edu.inf011.model.documentos.Documento;
 import br.ifba.edu.inf011.model.documentos.Privacidade;
 import br.ifba.edu.inf011.model.operador.Operador;
-
 public class GerenciadorDocumentoModel {
-
-	private List<Documento> repositorio;
+    private List<Documento> repositorio;
     private DocumentOperatorFactory factory;
     private Autenticador autenticador;
     private GestorDocumento gestor;
     private Documento atual;
-
     private GerenciadorComandos commandManager;
-
 
     public GerenciadorDocumentoModel(DocumentOperatorFactory factory) {
         this.repositorio = new ArrayList<>();
@@ -38,10 +36,10 @@ public class GerenciadorDocumentoModel {
     public Documento criarDocumento(int tipoAutenticadorIndex, Privacidade privacidade) throws FWDocumentException {
         Operador operador = factory.getOperador();
         Documento documento = factory.getDocumento();
-        
+
         operador.inicializar("jdc", "João das Couves");
         documento.inicializar(operador, privacidade);
-        
+
         this.autenticador.autenticar(tipoAutenticadorIndex, documento);
         this.repositorio.add(documento);
         this.atual = documento;
@@ -49,9 +47,7 @@ public class GerenciadorDocumentoModel {
     }
 
     public void salvarDocumento(Documento doc, String conteudo) throws Exception {
-        if (doc == null) {
-            return;
-        }
+        if (doc == null) return;
         this.commandManager.execute(new ComandoEditarConteudo(this, doc, conteudo));
         this.atual = this.getDocumentoAtual();
     }
@@ -59,7 +55,7 @@ public class GerenciadorDocumentoModel {
     public List<Documento> getRepositorio() {
         return repositorio;
     }
-    
+
     public Documento assinarDocumento(Documento doc) throws FWDocumentException {
         if (doc == null) return null;
         try {
@@ -71,8 +67,8 @@ public class GerenciadorDocumentoModel {
         } catch (Exception e) {
             throw new FWDocumentException(e.getMessage());
         }
-    }    
-    
+    }
+
     public Documento protegerDocumento(Documento doc) throws FWDocumentException {
         if (doc == null) return null;
         try {
@@ -84,9 +80,8 @@ public class GerenciadorDocumentoModel {
         } catch (Exception e) {
             throw new FWDocumentException(e.getMessage());
         }
-    }    
-    
-    
+    }
+
     public Documento tornarUrgente(Documento doc) throws FWDocumentException {
         if (doc == null) return null;
         try {
@@ -98,7 +93,7 @@ public class GerenciadorDocumentoModel {
         } catch (Exception e) {
             throw new FWDocumentException(e.getMessage());
         }
-    }      
+    }
 
     public void undo() throws FWDocumentException {
         try {
@@ -155,88 +150,133 @@ public class GerenciadorDocumentoModel {
             throw new FWDocumentException(e.getMessage());
         }
     }
-    
+
     public void atualizarRepositorio(Documento antigo, Documento novo) {
         int index = repositorio.indexOf(antigo);
         if (index != -1) {
             repositorio.set(index, novo);
         }
-    } 
-    
-	public Documento getDocumentoAtual() {
-		return this.atual;
-	}
-	
-	public void setDocumentoAtual(Documento doc) {
-		this.atual = doc;
-	}        
+    }
 
- 
+    public Documento getDocumentoAtual() {
+        return this.atual;
+    }
+
+    public void setDocumentoAtual(Documento doc) {
+        this.atual = doc;
+    }
+
 
     public DocumentoMemento createMemento(Documento doc) throws FWDocumentException {
         if (doc == null) {
-            return new DocumentoMemento(-1, null, null);
+            return new DocumentoMemento(-1, null, null, null);
         }
+
         int idx = repositorio.indexOf(doc);
-        String content;
-        try {
-            content = doc.getConteudo();
-        } catch (Exception e) {
-            content = null;
-        }
-        return new DocumentoMemento(idx, doc, content);
+        String conteudo = snapshotConteudo(doc);
+        Boolean urgente = snapshotUrgente(doc);
+
+        return new DocumentoMemento(idx, doc, conteudo, urgente);
     }
 
     public void restore(DocumentoMemento memento) throws FWDocumentException {
-        if (memento == null) {
-            return;
-        }
+        if (memento == null) return;
 
         Documento doc = memento.getDocumentoRef();
-        if (doc == null) {
-            return;
-        }
+        if (doc == null) return;
 
         int idx = memento.getIndex();
         if (idx >= 0 && idx < repositorio.size()) {
             repositorio.set(idx, doc);
         }
+
         if (memento.getConteudo() != null) {
             doc.setConteudo(memento.getConteudo());
         }
+
+        if (memento.getUrgente() != null) {
+            restoreUrgente(doc, memento.getUrgente());
+        }
+
         this.atual = doc;
     }
 
-  
+    private String snapshotConteudo(Documento doc) {
+       
+        try {
+            return doc.getConteudo();
+        } catch (Exception ignored) {
+         
+        }
+        try {
+            Field f = findField(doc.getClass(), "conteudo");
+            if (f != null) {
+                f.setAccessible(true);
+                Object val = f.get(doc);
+                return (val != null) ? String.valueOf(val) : null;
+            }
+        } catch (Exception ignored) {
+        }
+
+        return null;
+    }
+
+    private Boolean snapshotUrgente(Documento doc) {
+        try {
+            Method m = doc.getClass().getMethod("isUrgente");
+            Object val = m.invoke(doc);
+            return (val instanceof Boolean) ? (Boolean) val : null;
+        } catch (Exception ignored) {
+            return null;
+        }
+    }
+
+    private void restoreUrgente(Documento doc, boolean urgente) {
+        try {
+            Method m = doc.getClass().getMethod("setUrgente", boolean.class);
+            m.invoke(doc, urgente);
+        } catch (Exception ignored) {
+           
+        }
+    }
+
+    private Field findField(Class<?> type, String name) {
+        Class<?> cur = type;
+        while (cur != null && cur != Object.class) {
+            try {
+                return cur.getDeclaredField(name);
+            } catch (NoSuchFieldException e) {
+                cur = cur.getSuperclass();
+            }
+        }
+        return null;
+    }
+
 
     public Documento applySetContent(Documento doc, String conteudo) {
         doc.setConteudo(conteudo);
         this.atual = doc;
         return doc;
     }
-
     public Documento applySign(Documento doc) throws FWDocumentException {
         Operador operador = factory.getOperador();
         operador.inicializar("jdc", "João das Couves");
+
         Documento assinado = gestor.assinar(doc, operador);
         this.atualizarRepositorio(doc, assinado);
         this.atual = assinado;
         return assinado;
     }
-
     public Documento applyProtect(Documento doc) throws FWDocumentException {
         Documento protegido = gestor.proteger(doc);
         this.atualizarRepositorio(doc, protegido);
         this.atual = protegido;
         return protegido;
     }
-
     public Documento applyUrgent(Documento doc) throws FWDocumentException {
         Documento urgente = gestor.tornarUrgente(doc);
         this.atualizarRepositorio(doc, urgente);
         this.atual = urgente;
         return urgente;
     }
-    
-    
 }
