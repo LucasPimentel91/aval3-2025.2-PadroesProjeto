@@ -9,12 +9,14 @@ import br.ifba.edu.inf011.command.ComandoEditarConteudo;
 import br.ifba.edu.inf011.command.ComandoMacro;
 import br.ifba.edu.inf011.command.ComandoMarcarUrgente;
 import br.ifba.edu.inf011.command.ComandoProteger;
+import br.ifba.edu.inf011.command.ComandoPriorizar;
 import br.ifba.edu.inf011.command.GerenciadorComandos;
 import br.ifba.edu.inf011.command.RegistradorOperacoesArquivo;
 import br.ifba.edu.inf011.memento.DocumentoMemento;
 import br.ifba.edu.inf011.model.documentos.Documento;
 import br.ifba.edu.inf011.model.documentos.Privacidade;
 import br.ifba.edu.inf011.model.operador.Operador;
+@SuppressWarnings("unused")
 public class GerenciadorDocumentoModel {
     private List<Documento> repositorio;
     private DocumentOperatorFactory factory;
@@ -22,17 +24,14 @@ public class GerenciadorDocumentoModel {
     private GestorDocumento gestor;
     private Documento atual;
     private GerenciadorComandos commandManager;
-
     public GerenciadorDocumentoModel(DocumentOperatorFactory factory) {
         this.repositorio = new ArrayList<>();
         this.factory = factory;
         this.autenticador = new Autenticador();
         this.gestor = new GestorDocumento();
         this.atual = null;
-
         this.commandManager = new GerenciadorComandos(new RegistradorOperacoesArquivo("operations.log"));
     }
-
     public Documento criarDocumento(int tipoAutenticadorIndex, Privacidade privacidade) throws FWDocumentException {
         Operador operador = factory.getOperador();
         Documento documento = factory.getDocumento();
@@ -45,7 +44,6 @@ public class GerenciadorDocumentoModel {
         this.atual = documento;
         return documento;
     }
-
     public void salvarDocumento(Documento doc, String conteudo) throws Exception {
         if (doc == null) return;
         this.commandManager.execute(new ComandoEditarConteudo(this, doc, conteudo));
@@ -55,7 +53,6 @@ public class GerenciadorDocumentoModel {
     public List<Documento> getRepositorio() {
         return repositorio;
     }
-
     public Documento assinarDocumento(Documento doc) throws FWDocumentException {
         if (doc == null) return null;
         try {
@@ -68,7 +65,6 @@ public class GerenciadorDocumentoModel {
             throw new FWDocumentException(e.getMessage());
         }
     }
-
     public Documento protegerDocumento(Documento doc) throws FWDocumentException {
         if (doc == null) return null;
         try {
@@ -81,7 +77,6 @@ public class GerenciadorDocumentoModel {
             throw new FWDocumentException(e.getMessage());
         }
     }
-
     public Documento tornarUrgente(Documento doc) throws FWDocumentException {
         if (doc == null) return null;
         try {
@@ -94,7 +89,6 @@ public class GerenciadorDocumentoModel {
             throw new FWDocumentException(e.getMessage());
         }
     }
-
     public void undo() throws FWDocumentException {
         try {
             this.commandManager.undo();
@@ -102,7 +96,6 @@ public class GerenciadorDocumentoModel {
             throw new FWDocumentException(e.getMessage());
         }
     }
-
     public void redo() throws FWDocumentException {
         try {
             this.commandManager.redo();
@@ -110,11 +103,9 @@ public class GerenciadorDocumentoModel {
             throw new FWDocumentException(e.getMessage());
         }
     }
-
     public void consolidate() {
         this.commandManager.consolidate();
     }
-
     public void macroAlterarEAssinar(Documento doc, String conteudo) throws FWDocumentException {
         if (doc == null) return;
         try {
@@ -132,41 +123,30 @@ public class GerenciadorDocumentoModel {
             throw new FWDocumentException(e.getMessage());
         }
     }
-
     public void macroPriorizar(Documento doc) throws FWDocumentException {
         if (doc == null) return;
+
         try {
-            ComandoMacro macro = new ComandoMacro(
-                    "Macro: Priorizar (Urgente + Assinar)",
-                    List.of(
-                            new ComandoMarcarUrgente(this, doc),
-                            new ComandoAssinar(this, doc)
-                    )
-            );
-            this.commandManager.execute(macro);
+            this.commandManager.execute(new ComandoPriorizar(this, doc));
+            this.atual = this.getDocumentoAtual();
         } catch (FWDocumentException e) {
             throw e;
         } catch (Exception e) {
             throw new FWDocumentException(e.getMessage());
         }
     }
-
     public void atualizarRepositorio(Documento antigo, Documento novo) {
         int index = repositorio.indexOf(antigo);
         if (index != -1) {
             repositorio.set(index, novo);
         }
     }
-
     public Documento getDocumentoAtual() {
         return this.atual;
     }
-
     public void setDocumentoAtual(Documento doc) {
         this.atual = doc;
     }
-
-
     public DocumentoMemento createMemento(Documento doc) throws FWDocumentException {
         if (doc == null) {
             return new DocumentoMemento(-1, null, null, null);
@@ -175,71 +155,81 @@ public class GerenciadorDocumentoModel {
         int idx = repositorio.indexOf(doc);
         String conteudo = snapshotConteudo(doc);
         Boolean urgente = snapshotUrgente(doc);
-
         return new DocumentoMemento(idx, doc, conteudo, urgente);
     }
-
     public void restore(DocumentoMemento memento) throws FWDocumentException {
         if (memento == null) return;
-
         Documento doc = memento.getDocumentoRef();
         if (doc == null) return;
-
         int idx = memento.getIndex();
         if (idx >= 0 && idx < repositorio.size()) {
             repositorio.set(idx, doc);
         }
-
         if (memento.getConteudo() != null) {
             doc.setConteudo(memento.getConteudo());
         }
-
         if (memento.getUrgente() != null) {
             restoreUrgente(doc, memento.getUrgente());
         }
-
         this.atual = doc;
     }
-
+    private Documento unwrapDocumento(Documento doc) {
+        Documento atual = doc;
+        while (atual != null) {
+            try {
+                Field f = findField(atual.getClass(), "wrappeeDocumento");
+                if (f == null) {
+                    break;
+                }
+                f.setAccessible(true);
+                Object inner = f.get(atual);
+                if (inner instanceof Documento d) {
+                    atual = d;
+                    continue;
+                }
+                break;
+            } catch (Exception e) {
+                break;
+            }
+        }
+        return atual;
+    }
     private String snapshotConteudo(Documento doc) {
-       
+        if (doc == null) return null;
         try {
             return doc.getConteudo();
+        } catch (Exception ignored) {    
+        }
+        Documento base = unwrapDocumento(doc);
+        try {
+            return base.getConteudo();
         } catch (Exception ignored) {
-         
         }
         try {
-            Field f = findField(doc.getClass(), "conteudo");
+            Field f = findField(base.getClass(), "conteudo");
             if (f != null) {
                 f.setAccessible(true);
-                Object val = f.get(doc);
+                Object val = f.get(base);
                 return (val != null) ? String.valueOf(val) : null;
             }
         } catch (Exception ignored) {
         }
-
         return null;
     }
-
     private Boolean snapshotUrgente(Documento doc) {
         try {
-            Method m = doc.getClass().getMethod("isUrgente");
-            Object val = m.invoke(doc);
-            return (val instanceof Boolean) ? (Boolean) val : null;
+            return (doc != null) ? doc.isUrgente() : null;
         } catch (Exception ignored) {
             return null;
         }
     }
-
     private void restoreUrgente(Documento doc, boolean urgente) {
+        if (doc == null) return;
         try {
-            Method m = doc.getClass().getMethod("setUrgente", boolean.class);
-            m.invoke(doc, urgente);
+            doc.setUrgente(urgente);
         } catch (Exception ignored) {
-           
         }
     }
-
     private Field findField(Class<?> type, String name) {
         Class<?> cur = type;
         while (cur != null && cur != Object.class) {
@@ -251,8 +241,6 @@ public class GerenciadorDocumentoModel {
         }
         return null;
     }
-
-
     public Documento applySetContent(Documento doc, String conteudo) {
         doc.setConteudo(conteudo);
         this.atual = doc;

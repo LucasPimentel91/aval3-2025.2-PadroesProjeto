@@ -7,13 +7,9 @@ import br.ifba.edu.inf011.strategy.rules.EstrategiaProtocoloCriminal;
 import br.ifba.edu.inf011.strategy.rules.EstrategiaProtocoloPadrao;
 import br.ifba.edu.inf011.strategy.rules.EstrategiaProtocoloExportacao;
 import br.ifba.edu.inf011.strategy.rules.EstrategiaProtocoloPessoal;
-
-
 public class Autenticador {
-
     private final Map<Integer, EstrategiaNumeroProtocolo> strategies;
     private EstrategiaNumeroProtocolo defaultStrategy;
-
     public Autenticador() {
         this.strategies = new HashMap<>();
         this.defaultStrategy = new EstrategiaProtocoloPadrao();
@@ -28,18 +24,15 @@ public class Autenticador {
         }
         this.strategies.put(code, strategy);
     }
-
     public void setDefaultStrategy(EstrategiaNumeroProtocolo strategy) {
         if (strategy != null) {
             this.defaultStrategy = strategy;
         }
     }
-
     public void autenticar(Integer tipo, Documento documento) {
         if (documento == null) {
             return;
         }
-
         EstrategiaNumeroProtocolo strategy = this.strategies.get(tipo);
         if (strategy == null) {
             strategy = this.defaultStrategy;

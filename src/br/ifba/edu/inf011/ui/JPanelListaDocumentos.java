@@ -11,12 +11,9 @@ import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionListener;
 import br.ifba.edu.inf011.model.documentos.Documento;
 public class JPanelListaDocumentos<T> extends JPanel {
-
     private final JList<T> listDocumentos;
-
     public JPanelListaDocumentos(DefaultListModel<T> listModel, ListSelectionListener listener) {
         super(new BorderLayout());
-
         this.listDocumentos = new JList<>(listModel);
         this.listDocumentos.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         this.listDocumentos.setPreferredSize(new Dimension(200, 0));
@@ -41,7 +38,6 @@ public class JPanelListaDocumentos<T> extends JPanel {
                 return super.getListCellRendererComponent(list, texto, index, isSelected, cellHasFocus);
             }
         });
-
         this.add(this.listDocumentos, BorderLayout.CENTER);
     }
     public void addDoc(T doc) {
@@ -50,7 +46,6 @@ public class JPanelListaDocumentos<T> extends JPanel {
         this.listDocumentos.setSelectedIndex(model.size() - 1);
         this.repaint();
     }
-
     public void updateDoc(int index, T doc) {
         DefaultListModel<T> model = (DefaultListModel<T>) this.listDocumentos.getModel();
 
@@ -60,7 +55,6 @@ public class JPanelListaDocumentos<T> extends JPanel {
             this.repaint();
         }
     }
-
     public int getIndiceDocSelecionado() {
         return this.listDocumentos.getSelectedIndex();
     }

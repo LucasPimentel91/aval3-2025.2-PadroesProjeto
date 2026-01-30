@@ -3,7 +3,6 @@ import java.time.format.DateTimeFormatter;
 import br.ifba.edu.inf011.model.Assinatura;
 import br.ifba.edu.inf011.model.FWDocumentException;
 import br.ifba.edu.inf011.model.documentos.Documento;
-
 @SuppressWarnings("unused")
 public class AssinaturaDecorator extends DocumentoDecorator implements Documento {
 
@@ -25,10 +24,18 @@ public class AssinaturaDecorator extends DocumentoDecorator implements Documento
 	public String getConteudo() throws FWDocumentException{
 		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
 		String dataFormatada = this.assinatura.dataAssinatura().format(formatador);
-		
-		return super.getConteudo() +
-			   "\nAssinado por: " + this.assinatura.usuario().getNome() + " em " 
-								  + dataFormatada;
+
+		String base = super.getConteudo();
+		if (base == null) {
+			base = "";
+		}
+		base = base.stripTrailing();
+
+		String assinaturaTxt = "Assinado por: " + this.assinatura.usuario().getNome() + " em " + dataFormatada;
+		if (base.isBlank()) {
+			return assinaturaTxt;
+		}
+		return base + "\n" + assinaturaTxt;
 	}
 
 }

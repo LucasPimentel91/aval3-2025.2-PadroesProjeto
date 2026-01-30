@@ -11,7 +11,6 @@ public class GerenciadorComandos {
         this.redoStack = new ArrayDeque<>();
         this.logger = logger;
     }
-
     public void execute(DocumentoCommand command) throws Exception {
         if (command == null) {
             return;
@@ -22,15 +21,12 @@ public class GerenciadorComandos {
         this.redoStack.clear();
         log("EXECUTE - " + command.getDescription());
     }
-
     public boolean canUndo() {
         return !this.undoStack.isEmpty();
     }
-
     public boolean canRedo() {
         return !this.redoStack.isEmpty();
     }
-
     public void undo() throws Exception {
         if (!canUndo()) {
             return;
@@ -40,7 +36,6 @@ public class GerenciadorComandos {
         this.redoStack.push(command);
         log("UNDO - " + command.getDescription());
     }
-
     public void redo() throws Exception {
         if (!canRedo()) {
             return;
@@ -50,13 +45,11 @@ public class GerenciadorComandos {
         this.undoStack.push(command);
         log("REDO - " + command.getDescription());
     }
-
     public void consolidate() {
         this.undoStack.clear();
         this.redoStack.clear();
         log("CONSOLIDATE - pilhas de desfazer/refazer limpas");
     }
-
     private void log(String msg) {
         if (this.logger != null) {
             this.logger.log(msg);

@@ -7,12 +7,10 @@ import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 public class JPanelOperacoes extends JPanel{
-	
 	public JPanelOperacoes() {
     	this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
     	this.setBorder(BorderFactory.createTitledBorder("Ações"));
 	}
-	
 	public void addOperacao(String operacao, ActionListener acao) {
 		JButton btn = new JButton(operacao);
 		btn.addActionListener(acao);
@@ -21,5 +19,4 @@ public class JPanelOperacoes extends JPanel{
 		this.add(btn);
 		this.updateUI();
 	}
-
 }

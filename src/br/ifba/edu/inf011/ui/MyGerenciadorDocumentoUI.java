@@ -7,9 +7,11 @@ public class MyGerenciadorDocumentoUI extends AbstractGerenciadorDocumentosUI {
     public MyGerenciadorDocumentoUI(DocumentOperatorFactory factory) {
         super(factory);
     }
+
     @Override
     protected JPanelOperacoes montarMenuOperacoes() {
         JPanelOperacoes comandos = new JPanelOperacoes();
+
         comandos.addOperacao("➕ Criar Publico", e -> this.criarDocumento(Privacidade.PUBLICO));
         comandos.addOperacao("➕ Criar Privado", e -> this.criarDocumento(Privacidade.SIGILOSO));
         comandos.addOperacao("💾 Salvar", e -> this.salvarConteudo());
@@ -19,13 +21,20 @@ public class MyGerenciadorDocumentoUI extends AbstractGerenciadorDocumentosUI {
         comandos.addOperacao("↩ Desfazer", e -> this.desfazer());
         comandos.addOperacao("↪ Refazer", e -> this.refazer());
         comandos.addOperacao("🧹 Consolidar", e -> this.consolidar());
-
         return comandos;
     }
+
     private void criarDocumento(Privacidade privacidade) {
         try {
             int tipoIndex = this.barraSuperior.getTipoSelecionadoIndice();
             this.atual = this.controller.criarDocumento(tipoIndex, privacidade);
+
+            try {
+                this.controller.salvarDocumento(this.atual, "");
+                this.atual = this.controller.getDocumentoAtual();
+            } catch (Exception ignored) {
+            }
+
             this.barraDocs.addDoc(this.atual);
             this.refreshUI();
         } catch (FWDocumentException e) {
@@ -43,8 +52,34 @@ public class MyGerenciadorDocumentoUI extends AbstractGerenciadorDocumentosUI {
         }
     }
 
+    private void salvarRascunhoSeNecessario() {
+        if (this.atual == null) return;
+
+        String digitado = this.areaEdicao.getConteudo();
+        if (digitado == null) digitado = "";
+
+        try {
+            String salvo = this.atual.getConteudo();
+            if (salvo == null) salvo = "";
+
+            if (!digitado.equals(salvo)) {
+                this.controller.salvarDocumento(this.atual, digitado);
+                this.atual = this.controller.getDocumentoAtual();
+            }
+        } catch (Exception e) {
+           
+            try {
+                this.controller.salvarDocumento(this.atual, digitado);
+                this.atual = this.controller.getDocumentoAtual();
+            } catch (Exception ignored) {
+            }
+        }
+    }
+
     protected void protegerDocumento() {
         try {
+            salvarRascunhoSeNecessario();
+
             this.controller.protegerDocumento(this.atual);
             this.atual = this.controller.getDocumentoAtual();
             this.refreshUI();
@@ -52,8 +87,11 @@ public class MyGerenciadorDocumentoUI extends AbstractGerenciadorDocumentosUI {
             JOptionPane.showMessageDialog(this, "Erro ao proteger: " + e.getMessage());
         }
     }
+
     protected void assinarDocumento() {
         try {
+            salvarRascunhoSeNecessario();
+
             this.controller.assinarDocumento(this.atual);
             this.atual = this.controller.getDocumentoAtual();
             this.refreshUI();
@@ -63,6 +101,8 @@ public class MyGerenciadorDocumentoUI extends AbstractGerenciadorDocumentosUI {
     }
     protected void priorizarDocumento() {
         try {
+            salvarRascunhoSeNecessario();
+
             this.controller.macroPriorizar(this.atual);
             this.atual = this.controller.getDocumentoAtual();
             this.refreshUI();
@@ -92,5 +132,6 @@ public class MyGerenciadorDocumentoUI extends AbstractGerenciadorDocumentosUI {
         this.controller.consolidate();
         this.atual = this.controller.getDocumentoAtual();
         this.refreshUI();
+         JOptionPane.showMessageDialog(this, "Documento consolidado, não é possível realizar mais nenhuma alteração.");
     }
 }
