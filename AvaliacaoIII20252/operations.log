@@ -1,0 +1,851 @@
+
+[2026-01-30 23:15:58] EXECUTE - Editar conteúdo
+[2026-01-30 23:16:04] EXECUTE - Editar conteúdo
+[2026-01-30 23:16:04] EXECUTE - Assinar documento
+[2026-01-30 23:16:07] EXECUTE - Priorizar (Urgente)
+[2026-01-30 23:16:18] EXECUTE - Editar conteúdo
+[2026-01-30 23:16:22] UNDO - Editar conteúdo
+[2026-01-30 23:16:22] UNDO - Priorizar (Urgente)
+[2026-01-30 23:16:22] UNDO - Assinar documento
+[2026-01-30 23:16:23] UNDO - Editar conteúdo
+[2026-01-30 23:16:26] REDO - Editar conteúdo
+[2026-01-30 23:16:26] REDO - Assinar documento
+[2026-01-30 23:16:26] REDO - Priorizar (Urgente)
+[2026-01-30 23:16:26] REDO - Editar conteúdo
+[2026-01-30 23:16:28] UNDO - Editar conteúdo
+[2026-01-30 23:16:28] UNDO - Priorizar (Urgente)
+[2026-01-30 23:16:31] REDO - Priorizar (Urgente)
+[2026-01-30 23:16:31] REDO - Editar conteúdo
+[2026-01-30 23:16:33] UNDO - Editar conteúdo
+[2026-01-30 23:16:33] UNDO - Priorizar (Urgente)
+[2026-01-30 23:16:34] UNDO - Assinar documento
+[2026-01-30 23:16:44] REDO - Assinar documento
+[2026-01-30 23:16:44] REDO - Priorizar (Urgente)
+[2026-01-30 23:16:45] REDO - Editar conteúdo
+[2026-01-30 23:18:42] EXECUTE - Priorizar (Urgente)
+[2026-01-30 23:19:00] EXECUTE - Editar conteúdo
+[2026-01-30 23:19:01] EXECUTE - Editar conteúdo
+[2026-01-30 23:19:02] EXECUTE - Editar conteúdo
+[2026-01-30 23:19:02] EXECUTE - Editar conteúdo
+[2026-01-30 23:19:05] UNDO - Editar conteúdo
+[2026-01-30 23:19:05] UNDO - Editar conteúdo
+[2026-01-30 23:19:05] UNDO - Editar conteúdo
+[2026-01-30 23:19:06] UNDO - Editar conteúdo
+[2026-01-30 23:19:06] UNDO - Priorizar (Urgente)
+[2026-01-30 23:19:06] UNDO - Editar conteúdo
+[2026-01-30 23:19:06] UNDO - Priorizar (Urgente)
+[2026-01-30 23:19:06] UNDO - Assinar documento
+[2026-01-30 23:19:07] UNDO - Editar conteúdo
+[2026-01-30 23:19:07] UNDO - Editar conteúdo
+[2026-01-30 23:21:24] EXECUTE - Editar conteúdo
+[2026-01-30 23:21:26] EXECUTE - Editar conteúdo
+[2026-01-30 23:21:30] UNDO - Editar conteúdo
+[2026-01-30 23:21:39] EXECUTE - Editar conteúdo
+[2026-01-30 23:21:39] EXECUTE - Assinar documento
+[2026-01-30 23:21:40] EXECUTE - Priorizar (Urgente)
+[2026-01-30 23:21:43] UNDO - Priorizar (Urgente)
+[2026-01-30 23:21:43] UNDO - Assinar documento
+[2026-01-30 23:21:44] UNDO - Editar conteúdo
+[2026-01-30 23:21:47] UNDO - Editar conteúdo
+[2026-01-30 23:22:01] EXECUTE - Editar conteúdo
+[2026-01-30 23:22:01] EXECUTE - Priorizar (Urgente)
+[2026-01-30 23:22:02] EXECUTE - Assinar documento
+[2026-01-30 23:22:05] UNDO - Assinar documento
+[2026-01-30 23:22:05] UNDO - Priorizar (Urgente)
+[2026-01-30 23:22:05] UNDO - Editar conteúdo
+[2026-01-30 23:22:45] EXECUTE - Assinar documento
+[2026-01-30 23:22:49] EXECUTE - Priorizar (Urgente)
+[2026-01-30 23:22:55] CONSOLIDATE - pilhas de desfazer/refazer limpas
+[2026-01-30 23:25:33] EXECUTE - Editar conteúdo
+[2026-01-30 23:25:37] EXECUTE - Editar conteúdo
+[2026-01-30 23:25:37] EXECUTE - Assinar documento
+[2026-01-30 23:25:43] EXECUTE - Priorizar (Urgente)
+[2026-01-30 23:25:45] EXECUTE - Editar conteúdo
+[2026-01-30 23:25:51] UNDO - Editar conteúdo
+[2026-01-30 23:25:51] UNDO - Priorizar (Urgente)
+[2026-01-30 23:25:51] UNDO - Assinar documento
+[2026-01-30 23:25:52] UNDO - Editar conteúdo
+[2026-01-30 23:26:00] UNDO - Editar conteúdo
+[2026-01-30 23:26:35] REDO - Editar conteúdo
+[2026-01-30 23:28:46] UNDO - Editar conteúdo
+[2026-01-30 23:44:00] EXECUTE - Editar conteúdo
+[2026-01-30 23:44:00] EXECUTE - Assinar documento
+[2026-01-30 23:44:00] EXECUTE - Assinar documento
+[2026-01-30 23:44:00] EXECUTE - Assinar documento
+[2026-01-30 23:44:04] UNDO - Assinar documento
+[2026-01-30 23:44:04] UNDO - Assinar documento
+[2026-01-30 23:44:04] UNDO - Assinar documento
+[2026-01-30 23:44:06] UNDO - Editar conteúdo
+[2026-01-30 23:44:19] EXECUTE - Assinar documento
+[2026-01-30 23:44:19] EXECUTE - Assinar documento
+[2026-01-30 23:44:19] EXECUTE - Assinar documento
+[2026-01-30 23:44:20] EXECUTE - Assinar documento
+[2026-01-30 23:44:20] EXECUTE - Assinar documento
+[2026-01-30 23:44:20] EXECUTE - Assinar documento
+[2026-01-30 23:44:23] UNDO - Assinar documento
+[2026-01-30 23:44:31] EXECUTE - Editar conteúdo
+[2026-01-30 23:44:48] EXECUTE - Assinar documento
+[2026-01-30 23:44:48] EXECUTE - Assinar documento
+[2026-01-30 23:44:48] EXECUTE - Assinar documento
+[2026-01-30 23:44:51] EXECUTE - Editar conteúdo
+[2026-01-30 23:45:03] UNDO - Editar conteúdo
+[2026-01-30 23:45:08] UNDO - Assinar documento
+[2026-01-30 23:45:10] EXECUTE - Editar conteúdo
+[2026-01-30 23:45:14] UNDO - Editar conteúdo
+[2026-01-30 23:45:15] UNDO - Assinar documento
+[2026-01-30 23:45:16] UNDO - Assinar documento
+[2026-01-30 23:45:25] UNDO - Editar conteúdo
+[2026-01-30 23:45:26] UNDO - Assinar documento
+[2026-01-30 23:45:26] UNDO - Assinar documento
+[2026-01-30 23:45:30] EXECUTE - Editar conteúdo
+[2026-01-30 23:46:03] UNDO - Editar conteúdo
+[2026-01-30 23:46:05] UNDO - Assinar documento
+[2026-01-30 23:46:05] UNDO - Assinar documento
+[2026-01-30 23:46:06] REDO - Assinar documento
+[2026-01-30 23:46:07] REDO - Assinar documento
+[2026-01-30 23:46:07] REDO - Editar conteúdo
+[2026-01-30 23:46:11] EXECUTE - Editar conteúdo
+[2026-01-30 23:47:03] EXECUTE - Assinar documento
+[2026-01-30 23:47:06] EXECUTE - Editar conteúdo
+[2026-01-30 23:47:21] EXECUTE - Assinar documento
+[2026-01-30 23:47:21] EXECUTE - Assinar documento
+[2026-01-30 23:47:21] EXECUTE - Assinar documento
+[2026-01-30 23:47:33] UNDO - Assinar documento
+[2026-01-30 23:47:34] UNDO - Assinar documento
+[2026-01-30 23:47:36] UNDO - Assinar documento
+[2026-01-30 23:47:56] UNDO - Editar conteúdo
+[2026-01-30 23:47:57] UNDO - Assinar documento
+[2026-01-31 00:37:11] EXECUTE - Editar conteúdo
+[2026-01-31 00:37:17] UNDO - Editar conteúdo
+[2026-01-31 00:37:21] EXECUTE - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:37:32] UNDO - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:37:39] EXECUTE - Editar conteúdo
+[2026-01-31 00:37:41] EXECUTE - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:37:53] EXECUTE - Editar conteúdo
+[2026-01-31 00:37:58] UNDO - Editar conteúdo
+[2026-01-31 00:37:58] UNDO - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:37:58] UNDO - Editar conteúdo
+[2026-01-31 00:38:07] EXECUTE - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:38:20] EXECUTE - Macro: Alterar e Assinar
+[2026-01-31 00:38:27] UNDO - Macro: Alterar e Assinar
+[2026-01-31 00:38:27] UNDO - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:38:31] EXECUTE - Proteger documento
+[2026-01-31 00:38:37] EXECUTE - Editar conteúdo
+[2026-01-31 00:38:40] EXECUTE - Proteger documento
+[2026-01-31 00:38:46] UNDO - Proteger documento
+[2026-01-31 00:38:47] UNDO - Editar conteúdo
+[2026-01-31 00:38:47] UNDO - Proteger documento
+[2026-01-31 00:38:52] EXECUTE - Assinar documento
+[2026-01-31 00:38:59] CONSOLIDATE - pilhas de desfazer/refazer limpas
+[2026-01-31 00:39:08] EXECUTE - Macro: Alterar e Assinar
+[2026-01-31 00:39:15] EXECUTE - Macro: Alterar e Assinar
+[2026-01-31 00:39:21] UNDO - Macro: Alterar e Assinar
+[2026-01-31 00:39:21] UNDO - Macro: Alterar e Assinar
+[2026-01-31 00:39:37] EXECUTE - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:40:34] EXECUTE - Editar conteúdo
+[2026-01-31 00:40:41] EXECUTE - Editar conteúdo
+[2026-01-31 00:40:45] EXECUTE - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:40:47] EXECUTE - Editar conteúdo
+[2026-01-31 00:40:50] UNDO - Editar conteúdo
+[2026-01-31 00:40:50] UNDO - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:40:51] REDO - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:40:51] REDO - Editar conteúdo
+[2026-01-31 00:40:52] UNDO - Editar conteúdo
+[2026-01-31 00:40:53] UNDO - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:40:53] UNDO - Editar conteúdo
+[2026-01-31 00:40:54] REDO - Editar conteúdo
+[2026-01-31 00:40:55] REDO - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:40:57] UNDO - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:40:58] UNDO - Editar conteúdo
+[2026-01-31 00:41:02] REDO - Editar conteúdo
+[2026-01-31 00:41:02] REDO - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:41:02] REDO - Editar conteúdo
+[2026-01-31 00:41:03] EXECUTE - Assinar documento
+[2026-01-31 00:41:04] EXECUTE - Assinar documento
+[2026-01-31 00:41:04] EXECUTE - Assinar documento
+[2026-01-31 00:41:04] EXECUTE - Assinar documento
+[2026-01-31 00:41:06] EXECUTE - Editar conteúdo
+[2026-01-31 00:41:08] EXECUTE - Macro: Alterar e Assinar
+[2026-01-31 00:41:11] UNDO - Macro: Alterar e Assinar
+[2026-01-31 00:41:12] UNDO - Editar conteúdo
+[2026-01-31 00:41:12] UNDO - Assinar documento
+[2026-01-31 00:41:12] UNDO - Assinar documento
+[2026-01-31 00:41:12] UNDO - Assinar documento
+[2026-01-31 00:41:12] UNDO - Assinar documento
+[2026-01-31 00:41:13] UNDO - Editar conteúdo
+[2026-01-31 00:41:13] UNDO - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:41:13] UNDO - Editar conteúdo
+[2026-01-31 00:48:50] EXECUTE - Editar conteúdo
+[2026-01-31 00:48:55] EXECUTE - Editar conteúdo
+[2026-01-31 00:48:55] EXECUTE - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:49:02] UNDO - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:49:03] UNDO - Editar conteúdo
+[2026-01-31 00:49:05] REDO - Editar conteúdo
+[2026-01-31 00:49:05] REDO - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:49:16] EXECUTE - Editar conteúdo
+[2026-01-31 00:49:20] EXECUTE - Editar conteúdo
+[2026-01-31 00:49:25] EXECUTE - Editar conteúdo
+[2026-01-31 00:49:29] UNDO - Editar conteúdo
+[2026-01-31 00:49:30] REDO - Editar conteúdo
+[2026-01-31 00:49:32] EXECUTE - Assinar documento
+[2026-01-31 00:49:35] EXECUTE - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:49:38] UNDO - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:49:38] UNDO - Assinar documento
+[2026-01-31 00:49:39] UNDO - Editar conteúdo
+[2026-01-31 00:49:40] REDO - Editar conteúdo
+[2026-01-31 00:49:40] REDO - Assinar documento
+[2026-01-31 00:49:40] REDO - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:49:41] UNDO - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:49:42] UNDO - Assinar documento
+[2026-01-31 00:49:42] UNDO - Editar conteúdo
+[2026-01-31 00:49:45] CONSOLIDATE - pilhas de desfazer/refazer limpas
+[2026-01-31 00:50:12] EXECUTE - Assinar documento
+[2026-01-31 00:50:16] EXECUTE - Assinar documento
+[2026-01-31 00:50:26] UNDO - Assinar documento
+[2026-01-31 00:50:26] UNDO - Assinar documento
+[2026-01-31 00:50:35] REDO - Assinar documento
+[2026-01-31 00:50:41] UNDO - Assinar documento
+[2026-01-31 00:50:45] EXECUTE - Assinar documento
+[2026-01-31 00:50:45] EXECUTE - Assinar documento
+[2026-01-31 00:50:45] EXECUTE - Assinar documento
+[2026-01-31 00:50:48] EXECUTE - Macro: Alterar e Assinar
+[2026-01-31 00:50:50] EXECUTE - Macro: Alterar e Assinar
+[2026-01-31 00:50:51] EXECUTE - Macro: Alterar e Assinar
+[2026-01-31 00:50:52] EXECUTE - Macro: Alterar e Assinar
+[2026-01-31 00:50:53] EXECUTE - Macro: Alterar e Assinar
+[2026-01-31 00:50:53] EXECUTE - Macro: Alterar e Assinar
+[2026-01-31 00:50:54] EXECUTE - Macro: Alterar e Assinar
+[2026-01-31 00:50:54] EXECUTE - Macro: Alterar e Assinar
+[2026-01-31 00:50:55] EXECUTE - Macro: Alterar e Assinar
+[2026-01-31 00:51:02] EXECUTE - Editar conteúdo
+[2026-01-31 00:51:02] EXECUTE - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:51:08] EXECUTE - Editar conteúdo
+[2026-01-31 00:51:11] UNDO - Editar conteúdo
+[2026-01-31 00:51:12] UNDO - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:51:12] UNDO - Editar conteúdo
+[2026-01-31 00:51:12] UNDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:12] UNDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:13] UNDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:13] UNDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:13] UNDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:13] UNDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:13] UNDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:13] UNDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:14] UNDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:14] UNDO - Assinar documento
+[2026-01-31 00:51:14] UNDO - Assinar documento
+[2026-01-31 00:51:14] REDO - Assinar documento
+[2026-01-31 00:51:15] REDO - Assinar documento
+[2026-01-31 00:51:15] REDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:15] REDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:15] REDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:15] REDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:15] REDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:16] REDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:16] REDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:16] REDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:16] REDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:16] REDO - Editar conteúdo
+[2026-01-31 00:51:17] REDO - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:51:17] REDO - Editar conteúdo
+[2026-01-31 00:51:18] UNDO - Editar conteúdo
+[2026-01-31 00:51:18] UNDO - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:51:18] UNDO - Editar conteúdo
+[2026-01-31 00:51:19] UNDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:19] UNDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:19] UNDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:19] UNDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:19] UNDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:20] UNDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:20] UNDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:20] UNDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:20] UNDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:20] UNDO - Assinar documento
+[2026-01-31 00:51:21] UNDO - Assinar documento
+[2026-01-31 00:51:21] UNDO - Assinar documento
+[2026-01-31 00:51:25] EXECUTE - Macro: Alterar e Assinar
+[2026-01-31 00:51:32] EXECUTE - Assinar documento
+[2026-01-31 00:51:32] EXECUTE - Assinar documento
+[2026-01-31 00:51:32] EXECUTE - Assinar documento
+[2026-01-31 00:51:32] EXECUTE - Assinar documento
+[2026-01-31 00:51:32] EXECUTE - Assinar documento
+[2026-01-31 00:51:33] EXECUTE - Assinar documento
+[2026-01-31 00:51:33] EXECUTE - Assinar documento
+[2026-01-31 00:51:33] EXECUTE - Assinar documento
+[2026-01-31 00:51:33] EXECUTE - Assinar documento
+[2026-01-31 00:51:34] UNDO - Assinar documento
+[2026-01-31 00:51:34] UNDO - Assinar documento
+[2026-01-31 00:51:34] UNDO - Assinar documento
+[2026-01-31 00:51:34] UNDO - Assinar documento
+[2026-01-31 00:51:34] UNDO - Assinar documento
+[2026-01-31 00:51:35] UNDO - Assinar documento
+[2026-01-31 00:51:35] UNDO - Assinar documento
+[2026-01-31 00:51:35] UNDO - Assinar documento
+[2026-01-31 00:51:35] UNDO - Assinar documento
+[2026-01-31 00:51:35] UNDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:37] REDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:38] REDO - Assinar documento
+[2026-01-31 00:51:38] REDO - Assinar documento
+[2026-01-31 00:51:38] REDO - Assinar documento
+[2026-01-31 00:51:39] UNDO - Assinar documento
+[2026-01-31 00:51:39] UNDO - Assinar documento
+[2026-01-31 00:51:40] UNDO - Assinar documento
+[2026-01-31 00:51:40] UNDO - Macro: Alterar e Assinar
+[2026-01-31 00:51:43] EXECUTE - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:51:45] EXECUTE - Editar conteúdo
+[2026-01-31 00:51:48] UNDO - Editar conteúdo
+[2026-01-31 00:51:49] UNDO - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:51:57] EXECUTE - Macro: Alterar e Assinar
+[2026-01-31 00:51:59] UNDO - Macro: Alterar e Assinar
+[2026-01-31 00:52:01] REDO - Macro: Alterar e Assinar
+[2026-01-31 00:52:03] UNDO - Macro: Alterar e Assinar
+[2026-01-31 00:52:16] EXECUTE - Editar conteúdo
+[2026-01-31 00:52:21] UNDO - Editar conteúdo
+[2026-01-31 00:52:24] REDO - Editar conteúdo
+[2026-01-31 00:52:24] UNDO - Editar conteúdo
+[2026-01-31 00:52:27] REDO - Editar conteúdo
+[2026-01-31 00:52:28] EXECUTE - Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 00:52:30] EXECUTE - Macro: Alterar e Assinar
+[2026-01-31 00:52:34] CONSOLIDATE - pilhas de desfazer/refazer limpas
+[2026-01-31 04:22:49] EXECUTE - Editar conteúdo
+[2026-01-31 04:22:51] EXECUTE - Assinar documento
+[2026-01-31 04:22:51] EXECUTE - Assinar documento
+[2026-01-31 04:22:52] EXECUTE - Assinar documento
+[2026-01-31 04:22:53] EXECUTE - Editar conteúdo
+[2026-01-31 04:22:54] EXECUTE - Editar conteúdo
+[2026-01-31 04:22:57] UNDO - Editar conteúdo
+[2026-01-31 04:23:00] UNDO - Editar conteúdo
+[2026-01-31 04:23:02] EXECUTE - Editar conteúdo
+[2026-01-31 04:23:05] EXECUTE - Assinar documento
+[2026-01-31 04:23:06] EXECUTE - Assinar documento
+[2026-01-31 04:23:06] EXECUTE - Assinar documento
+[2026-01-31 04:23:06] EXECUTE - Assinar documento
+[2026-01-31 04:23:06] EXECUTE - Assinar documento
+[2026-01-31 04:23:08] UNDO - Assinar documento
+[2026-01-31 04:23:19] UNDO - Assinar documento
+[2026-01-31 04:23:22] UNDO - Assinar documento
+[2026-01-31 04:23:23] UNDO - Assinar documento
+[2026-01-31 04:23:24] UNDO - Assinar documento
+[2026-01-31 04:23:26] REDO - Assinar documento
+[2026-01-31 04:23:27] REDO - Assinar documento
+[2026-01-31 04:23:28] REDO - Assinar documento
+[2026-01-31 04:23:29] REDO - Assinar documento
+[2026-01-31 04:23:30] REDO - Assinar documento
+[2026-01-31 04:23:31] UNDO - Assinar documento
+[2026-01-31 04:23:32] UNDO - Assinar documento
+[2026-01-31 04:23:32] UNDO - Assinar documento
+[2026-01-31 04:23:32] UNDO - Assinar documento
+[2026-01-31 04:23:33] UNDO - Assinar documento
+[2026-01-31 04:23:37] EXECUTE - Assinar documento
+[2026-01-31 04:23:38] EXECUTE - Editar conteúdo
+[2026-01-31 04:23:39] UNDO - Editar conteúdo
+[2026-01-31 04:23:40] REDO - Editar conteúdo
+[2026-01-31 04:23:48] EXECUTE - Editar conteúdo
+[2026-01-31 04:23:48] EXECUTE - Editar conteúdo
+[2026-01-31 04:23:48] EXECUTE - Editar conteúdo
+[2026-01-31 04:23:49] EXECUTE - Assinar documento
+[2026-01-31 04:23:49] EXECUTE - Assinar documento
+[2026-01-31 04:23:50] EXECUTE - Assinar documento
+[2026-01-31 04:23:50] EXECUTE - Assinar documento
+[2026-01-31 04:23:50] EXECUTE - Assinar documento
+[2026-01-31 04:23:50] EXECUTE - Assinar documento
+[2026-01-31 04:23:56] UNDO - Assinar documento
+[2026-01-31 04:24:00] REDO - Assinar documento
+[2026-01-31 04:24:04] CONSOLIDATE - pilhas de desfazer/refazer limpas
+[2026-01-31 04:24:13] EXECUTE - Editar conteúdo
+[2026-01-31 04:36:20] EXECUTE - Editar conteúdo
+[2026-01-31 04:36:21] EXECUTE - Editar conteúdo
+[2026-01-31 04:36:21] EXECUTE - Editar conteúdo
+[2026-01-31 04:36:22] EXECUTE - Editar conteúdo
+[2026-01-31 04:36:24] EXECUTE - Assinar documento
+[2026-01-31 04:36:24] EXECUTE - Assinar documento
+[2026-01-31 04:36:24] EXECUTE - Assinar documento
+[2026-01-31 04:36:24] EXECUTE - Assinar documento
+[2026-01-31 04:36:26] UNDO - Assinar documento
+[2026-01-31 04:36:27] UNDO - Assinar documento
+[2026-01-31 04:36:28] UNDO - Assinar documento
+[2026-01-31 04:36:28] UNDO - Assinar documento
+[2026-01-31 04:36:29] EXECUTE - Editar conteúdo
+[2026-01-31 04:36:33] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:36:40] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:36:41] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:36:42] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:36:42] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:36:43] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:36:43] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:36:44] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:36:44] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:36:44] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:36:44] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:36:45] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:36:45] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:36:46] UNDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:36:46] UNDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:36:47] UNDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:36:47] UNDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:36:47] UNDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:36:47] UNDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:36:47] UNDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:36:47] UNDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:36:47] UNDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:36:48] UNDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:36:48] UNDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:36:48] UNDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:36:48] UNDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:42:12] EXECUTE - Editar conteúdo
+[2026-01-31 04:42:13] EXECUTE - Editar conteúdo
+[2026-01-31 04:42:13] EXECUTE - Editar conteúdo
+[2026-01-31 04:42:15] EXECUTE - Assinar documento
+[2026-01-31 04:42:16] EXECUTE - Assinar documento
+[2026-01-31 04:42:16] EXECUTE - Assinar documento
+[2026-01-31 04:42:16] EXECUTE - Assinar documento
+[2026-01-31 04:42:17] UNDO - Assinar documento
+[2026-01-31 04:42:18] UNDO - Assinar documento
+[2026-01-31 04:42:18] UNDO - Assinar documento
+[2026-01-31 04:42:19] UNDO - Assinar documento
+[2026-01-31 04:42:20] EXECUTE - Editar conteúdo
+[2026-01-31 04:42:22] EXECUTE - Assinar documento
+[2026-01-31 04:42:22] EXECUTE - Assinar documento
+[2026-01-31 04:42:23] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:42:24] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:42:26] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:42:27] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:42:28] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:42:29] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:42:29] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:42:29] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:42:30] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:42:30] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 04:43:44] EXECUTE - Editar conteúdo
+[2026-01-31 04:43:45] EXECUTE - Editar conteúdo
+[2026-01-31 04:43:45] EXECUTE - Editar conteúdo
+[2026-01-31 04:43:47] EXECUTE - Assinar documento
+[2026-01-31 04:43:47] EXECUTE - Proteger documento
+[2026-01-31 04:43:57] UNDO - Proteger documento
+[2026-01-31 04:44:04] EXECUTE - Editar conteúdo
+[2026-01-31 04:44:06] EXECUTE - Proteger documento
+[2026-01-31 04:44:14] EXECUTE - Editar conteúdo
+[2026-01-31 04:44:14] EXECUTE - Assinar documento
+[2026-01-31 04:44:19] EXECUTE - Proteger documento
+[2026-01-31 04:44:21] EXECUTE - Proteger documento
+[2026-01-31 04:44:21] EXECUTE - Proteger documento
+[2026-01-31 04:44:21] EXECUTE - Proteger documento
+[2026-01-31 04:44:26] EXECUTE - Assinar documento
+[2026-01-31 04:44:26] EXECUTE - Assinar documento
+[2026-01-31 04:44:26] EXECUTE - Assinar documento
+[2026-01-31 04:44:27] EXECUTE - Proteger documento
+[2026-01-31 04:44:27] EXECUTE - Proteger documento
+[2026-01-31 04:44:27] EXECUTE - Proteger documento
+[2026-01-31 04:44:29] EXECUTE - Editar conteúdo
+[2026-01-31 04:44:29] EXECUTE - Assinar documento
+[2026-01-31 04:44:34] EXECUTE - Proteger documento
+[2026-01-31 04:44:36] EXECUTE - Proteger documento
+[2026-01-31 04:44:37] EXECUTE - Proteger documento
+[2026-01-31 04:44:37] EXECUTE - Proteger documento
+[2026-01-31 04:44:37] EXECUTE - Proteger documento
+[2026-01-31 04:44:39] EXECUTE - Proteger documento
+[2026-01-31 04:44:45] UNDO - Proteger documento
+[2026-01-31 04:44:45] UNDO - Proteger documento
+[2026-01-31 04:44:45] UNDO - Proteger documento
+[2026-01-31 04:44:45] UNDO - Proteger documento
+[2026-01-31 04:44:45] UNDO - Proteger documento
+[2026-01-31 04:44:45] UNDO - Proteger documento
+[2026-01-31 04:44:46] UNDO - Assinar documento
+[2026-01-31 04:44:49] UNDO - Editar conteúdo
+[2026-01-31 04:44:57] UNDO - Proteger documento
+[2026-01-31 04:44:57] UNDO - Proteger documento
+[2026-01-31 04:44:57] UNDO - Proteger documento
+[2026-01-31 04:44:58] UNDO - Assinar documento
+[2026-01-31 04:44:58] UNDO - Assinar documento
+[2026-01-31 04:44:59] UNDO - Assinar documento
+[2026-01-31 04:45:11] EXECUTE - Editar conteúdo
+[2026-01-31 04:45:11] EXECUTE - Editar conteúdo
+[2026-01-31 04:45:14] EXECUTE - Assinar documento
+[2026-01-31 04:45:14] EXECUTE - Assinar documento
+[2026-01-31 04:45:14] EXECUTE - Assinar documento
+[2026-01-31 04:45:14] EXECUTE - Assinar documento
+[2026-01-31 04:45:14] EXECUTE - Assinar documento
+[2026-01-31 04:45:15] EXECUTE - Editar conteúdo
+[2026-01-31 04:45:18] EXECUTE - Assinar documento
+[2026-01-31 04:45:19] EXECUTE - Editar conteúdo
+[2026-01-31 04:45:23] UNDO - Editar conteúdo
+[2026-01-31 04:45:25] UNDO - Assinar documento
+[2026-01-31 05:01:08] EXECUTE - Editar conteúdo
+[2026-01-31 05:01:11] EXECUTE - Assinar documento
+[2026-01-31 05:01:12] EXECUTE - Assinar documento
+[2026-01-31 05:01:13] EXECUTE - Assinar documento
+[2026-01-31 05:01:13] EXECUTE - Assinar documento
+[2026-01-31 05:01:14] EXECUTE - Assinar documento
+[2026-01-31 05:01:14] UNDO - Assinar documento
+[2026-01-31 05:01:15] UNDO - Assinar documento
+[2026-01-31 05:01:16] UNDO - Assinar documento
+[2026-01-31 05:01:16] UNDO - Assinar documento
+[2026-01-31 05:01:17] UNDO - Assinar documento
+[2026-01-31 05:06:00] EXECUTE - Editar conteúdo
+[2026-01-31 05:06:06] EXECUTE - Assinar documento
+[2026-01-31 05:06:06] EXECUTE - Assinar documento
+[2026-01-31 05:06:07] EXECUTE - Assinar documento
+[2026-01-31 05:06:07] EXECUTE - Assinar documento
+[2026-01-31 05:06:07] EXECUTE - Assinar documento
+[2026-01-31 05:06:08] UNDO - Assinar documento
+[2026-01-31 05:06:09] UNDO - Assinar documento
+[2026-01-31 05:06:09] UNDO - Assinar documento
+[2026-01-31 05:06:10] UNDO - Assinar documento
+[2026-01-31 05:06:10] UNDO - Assinar documento
+[2026-01-31 05:10:03] EXECUTE - Editar conteúdo
+[2026-01-31 05:10:04] EXECUTE - Editar conteúdo
+[2026-01-31 05:10:04] EXECUTE - Editar conteúdo
+[2026-01-31 05:10:05] EXECUTE - Assinar documento
+[2026-01-31 05:10:06] EXECUTE - Assinar documento
+[2026-01-31 05:10:06] EXECUTE - Assinar documento
+[2026-01-31 05:10:07] UNDO - Assinar documento
+[2026-01-31 05:10:08] UNDO - Assinar documento
+[2026-01-31 05:10:09] UNDO - Assinar documento
+[2026-01-31 05:10:14] EXECUTE - Assinar documento
+[2026-01-31 05:10:15] EXECUTE - Assinar documento
+[2026-01-31 05:10:16] EXECUTE - Assinar documento
+[2026-01-31 05:10:17] EXECUTE - Assinar documento
+[2026-01-31 05:10:20] UNDO - Assinar documento
+[2026-01-31 05:10:21] EXECUTE - Editar conteúdo
+[2026-01-31 05:10:25] UNDO - Editar conteúdo
+[2026-01-31 05:10:25] UNDO - Assinar documento
+[2026-01-31 05:10:26] UNDO - Assinar documento
+[2026-01-31 05:10:29] EXECUTE - Editar conteúdo
+[2026-01-31 05:10:30] UNDO - Editar conteúdo
+[2026-01-31 05:10:32] UNDO - Assinar documento
+[2026-01-31 05:10:37] REDO - Assinar documento
+[2026-01-31 05:10:38] REDO - Editar conteúdo
+[2026-01-31 05:10:39] UNDO - Editar conteúdo
+[2026-01-31 05:10:40] UNDO - Assinar documento
+[2026-01-31 05:10:41] REDO - Assinar documento
+[2026-01-31 05:10:42] REDO - Editar conteúdo
+[2026-01-31 05:16:23] EXECUTE - Editar conteúdo
+[2026-01-31 05:16:23] EXECUTE - Editar conteúdo
+[2026-01-31 05:16:24] EXECUTE - Editar conteúdo
+[2026-01-31 05:16:25] EXECUTE - Assinar documento
+[2026-01-31 05:16:25] EXECUTE - Assinar documento
+[2026-01-31 05:16:25] EXECUTE - Assinar documento
+[2026-01-31 05:16:25] EXECUTE - Assinar documento
+[2026-01-31 05:16:26] EXECUTE - Assinar documento
+[2026-01-31 05:16:27] UNDO - Assinar documento
+[2026-01-31 05:16:27] UNDO - Assinar documento
+[2026-01-31 05:16:27] UNDO - Assinar documento
+[2026-01-31 05:16:28] UNDO - Assinar documento
+[2026-01-31 05:16:28] UNDO - Assinar documento
+[2026-01-31 05:16:29] REDO - Assinar documento
+[2026-01-31 05:16:30] REDO - Assinar documento
+[2026-01-31 05:16:31] REDO - Assinar documento
+[2026-01-31 05:16:31] REDO - Assinar documento
+[2026-01-31 05:16:31] REDO - Assinar documento
+[2026-01-31 05:17:11] EXECUTE - Editar conteúdo
+[2026-01-31 05:17:11] EXECUTE - Editar conteúdo
+[2026-01-31 05:17:12] EXECUTE - Editar conteúdo
+[2026-01-31 05:17:13] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:17] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:18] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:20] EXECUTE - Assinar documento
+[2026-01-31 05:17:21] UNDO - Assinar documento
+[2026-01-31 05:17:21] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:23] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:23] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:23] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:24] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:24] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:25] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:25] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:26] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:26] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:26] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:27] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:27] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:27] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:27] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:28] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:28] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:28] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:28] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:28] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:28] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:29] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:29] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:29] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:30] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:30] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:30] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:30] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:30] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:30] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:31] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:31] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:31] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:32] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:32] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:32] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:33] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:33] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:33] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:33] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:33] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:35] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:36] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:36] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:36] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:36] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:38] EXECUTE - Assinar documento
+[2026-01-31 05:17:38] EXECUTE - Assinar documento
+[2026-01-31 05:17:39] UNDO - Assinar documento
+[2026-01-31 05:17:40] UNDO - Assinar documento
+[2026-01-31 05:17:40] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:40] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:41] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:43] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:44] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:45] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:46] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:47] EXECUTE - Assinar documento
+[2026-01-31 05:17:47] EXECUTE - Assinar documento
+[2026-01-31 05:17:48] EXECUTE - Assinar documento
+[2026-01-31 05:17:48] EXECUTE - Assinar documento
+[2026-01-31 05:17:48] EXECUTE - Assinar documento
+[2026-01-31 05:17:48] EXECUTE - Assinar documento
+[2026-01-31 05:17:48] EXECUTE - Assinar documento
+[2026-01-31 05:17:48] EXECUTE - Assinar documento
+[2026-01-31 05:17:49] EXECUTE - Assinar documento
+[2026-01-31 05:17:49] UNDO - Assinar documento
+[2026-01-31 05:17:49] UNDO - Assinar documento
+[2026-01-31 05:17:50] UNDO - Assinar documento
+[2026-01-31 05:17:50] UNDO - Assinar documento
+[2026-01-31 05:17:50] UNDO - Assinar documento
+[2026-01-31 05:17:50] UNDO - Assinar documento
+[2026-01-31 05:17:50] UNDO - Assinar documento
+[2026-01-31 05:17:50] UNDO - Assinar documento
+[2026-01-31 05:17:51] UNDO - Assinar documento
+[2026-01-31 05:17:51] UNDO - Editar conteúdo
+[2026-01-31 05:17:51] UNDO - Editar conteúdo
+[2026-01-31 05:17:52] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:17:53] EXECUTE - Assinar documento
+[2026-01-31 05:17:53] EXECUTE - Assinar documento
+[2026-01-31 05:17:53] EXECUTE - Assinar documento
+[2026-01-31 05:17:54] EXECUTE - Assinar documento
+[2026-01-31 05:17:54] EXECUTE - Assinar documento
+[2026-01-31 05:17:54] EXECUTE - Assinar documento
+[2026-01-31 05:17:54] EXECUTE - Assinar documento
+[2026-01-31 05:17:54] EXECUTE - Assinar documento
+[2026-01-31 05:17:54] EXECUTE - Assinar documento
+[2026-01-31 05:17:55] EXECUTE - Assinar documento
+[2026-01-31 05:17:55] EXECUTE - Assinar documento
+[2026-01-31 05:17:55] UNDO - Assinar documento
+[2026-01-31 05:17:56] UNDO - Assinar documento
+[2026-01-31 05:17:56] UNDO - Assinar documento
+[2026-01-31 05:17:56] UNDO - Assinar documento
+[2026-01-31 05:17:57] UNDO - Assinar documento
+[2026-01-31 05:17:57] UNDO - Assinar documento
+[2026-01-31 05:17:57] UNDO - Assinar documento
+[2026-01-31 05:17:57] UNDO - Assinar documento
+[2026-01-31 05:17:57] UNDO - Assinar documento
+[2026-01-31 05:17:57] UNDO - Assinar documento
+[2026-01-31 05:17:58] UNDO - Assinar documento
+[2026-01-31 05:17:58] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:24:17] EXECUTE - Editar conteúdo
+[2026-01-31 05:24:17] EXECUTE - Editar conteúdo
+[2026-01-31 05:24:18] EXECUTE - Editar conteúdo
+[2026-01-31 05:24:21] EXECUTE - Assinar documento
+[2026-01-31 05:24:21] EXECUTE - Assinar documento
+[2026-01-31 05:24:22] EXECUTE - Assinar documento
+[2026-01-31 05:24:22] EXECUTE - Assinar documento
+[2026-01-31 05:24:23] EXECUTE - Assinar documento
+[2026-01-31 05:24:24] UNDO - Assinar documento
+[2026-01-31 05:24:24] UNDO - Assinar documento
+[2026-01-31 05:24:25] UNDO - Assinar documento
+[2026-01-31 05:24:25] UNDO - Assinar documento
+[2026-01-31 05:24:25] UNDO - Assinar documento
+[2026-01-31 05:24:27] EXECUTE - Assinar documento
+[2026-01-31 05:24:27] EXECUTE - Assinar documento
+[2026-01-31 05:24:27] EXECUTE - Assinar documento
+[2026-01-31 05:24:27] EXECUTE - Assinar documento
+[2026-01-31 05:24:27] EXECUTE - Assinar documento
+[2026-01-31 05:24:27] EXECUTE - Assinar documento
+[2026-01-31 05:24:28] EXECUTE - Assinar documento
+[2026-01-31 05:24:28] EXECUTE - Assinar documento
+[2026-01-31 05:24:28] EXECUTE - Assinar documento
+[2026-01-31 05:24:29] UNDO - Assinar documento
+[2026-01-31 05:24:29] UNDO - Assinar documento
+[2026-01-31 05:24:29] UNDO - Assinar documento
+[2026-01-31 05:24:29] UNDO - Assinar documento
+[2026-01-31 05:24:29] UNDO - Assinar documento
+[2026-01-31 05:24:29] UNDO - Assinar documento
+[2026-01-31 05:24:29] UNDO - Assinar documento
+[2026-01-31 05:24:30] UNDO - Assinar documento
+[2026-01-31 05:24:30] REDO - Assinar documento
+[2026-01-31 05:24:30] REDO - Assinar documento
+[2026-01-31 05:24:31] REDO - Assinar documento
+[2026-01-31 05:24:31] UNDO - Assinar documento
+[2026-01-31 05:24:32] EXECUTE - Editar conteúdo
+[2026-01-31 05:24:33] UNDO - Editar conteúdo
+[2026-01-31 05:24:33] UNDO - Assinar documento
+[2026-01-31 05:24:34] UNDO - Assinar documento
+[2026-01-31 05:24:37] REDO - Assinar documento
+[2026-01-31 05:24:37] REDO - Assinar documento
+[2026-01-31 05:24:38] REDO - Editar conteúdo
+[2026-01-31 05:24:40] UNDO - Editar conteúdo
+[2026-01-31 05:24:40] UNDO - Assinar documento
+[2026-01-31 05:24:40] UNDO - Assinar documento
+[2026-01-31 05:24:40] UNDO - Assinar documento
+[2026-01-31 05:24:41] UNDO - Editar conteúdo
+[2026-01-31 05:24:42] EXECUTE - Editar conteúdo
+[2026-01-31 05:24:43] EXECUTE - Editar conteúdo
+[2026-01-31 05:24:44] EXECUTE - Editar conteúdo
+[2026-01-31 05:24:44] EXECUTE - Assinar documento
+[2026-01-31 05:24:45] EXECUTE - Assinar documento
+[2026-01-31 05:24:45] EXECUTE - Assinar documento
+[2026-01-31 05:24:45] EXECUTE - Assinar documento
+[2026-01-31 05:24:45] EXECUTE - Assinar documento
+[2026-01-31 05:24:45] EXECUTE - Assinar documento
+[2026-01-31 05:24:46] EXECUTE - Editar conteúdo
+[2026-01-31 05:24:49] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 05:24:50] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 05:24:51] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 05:24:53] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 05:24:54] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 05:24:56] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:24:59] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:25:00] UNDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 05:25:01] UNDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 05:25:02] UNDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 05:25:02] UNDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 05:25:04] UNDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 05:25:05] EXECUTE - Assinar documento
+[2026-01-31 05:25:06] EXECUTE - Assinar documento
+[2026-01-31 05:25:06] EXECUTE - Assinar documento
+[2026-01-31 05:25:06] EXECUTE - Assinar documento
+[2026-01-31 05:25:06] EXECUTE - Assinar documento
+[2026-01-31 05:25:06] EXECUTE - Assinar documento
+[2026-01-31 05:25:06] EXECUTE - Assinar documento
+[2026-01-31 05:25:10] UNDO - Assinar documento
+[2026-01-31 05:25:10] UNDO - Assinar documento
+[2026-01-31 05:25:10] UNDO - Assinar documento
+[2026-01-31 05:25:10] UNDO - Assinar documento
+[2026-01-31 05:25:10] UNDO - Assinar documento
+[2026-01-31 05:25:11] UNDO - Assinar documento
+[2026-01-31 05:25:11] UNDO - Assinar documento
+[2026-01-31 05:25:12] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 05:25:16] EXECUTE - Assinar documento
+[2026-01-31 05:25:17] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:25:21] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:25:21] UNDO - Assinar documento
+[2026-01-31 05:25:22] UNDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 05:25:22] UNDO - Editar conteúdo
+[2026-01-31 05:25:23] UNDO - Assinar documento
+[2026-01-31 05:25:24] UNDO - Assinar documento
+[2026-01-31 05:25:24] UNDO - Assinar documento
+[2026-01-31 05:25:24] UNDO - Assinar documento
+[2026-01-31 05:25:24] UNDO - Assinar documento
+[2026-01-31 05:25:24] UNDO - Assinar documento
+[2026-01-31 05:25:25] UNDO - Editar conteúdo
+[2026-01-31 05:25:25] UNDO - Editar conteúdo
+[2026-01-31 05:25:25] UNDO - Editar conteúdo
+[2026-01-31 05:25:25] UNDO - Editar conteúdo
+[2026-01-31 05:25:25] UNDO - Editar conteúdo
+[2026-01-31 05:28:17] EXECUTE - Editar conteúdo
+[2026-01-31 05:28:17] EXECUTE - Editar conteúdo
+[2026-01-31 05:28:17] EXECUTE - Editar conteúdo
+[2026-01-31 05:28:17] EXECUTE - Editar conteúdo
+[2026-01-31 05:28:17] EXECUTE - Editar conteúdo
+[2026-01-31 05:28:23] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:28:26] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:28:27] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:28:28] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:29:04] EXECUTE - Editar conteúdo
+[2026-01-31 05:29:05] EXECUTE - Assinar documento
+[2026-01-31 05:29:05] EXECUTE - Assinar documento
+[2026-01-31 05:29:05] EXECUTE - Assinar documento
+[2026-01-31 05:29:05] EXECUTE - Assinar documento
+[2026-01-31 05:29:07] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 05:29:09] EXECUTE - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:29:11] EXECUTE - MACRO: Macro: Alterar e Assinar
+[2026-01-31 05:29:12] UNDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 05:29:12] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:29:12] UNDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 05:29:13] UNDO - Assinar documento
+[2026-01-31 05:29:14] UNDO - Assinar documento
+[2026-01-31 05:29:14] UNDO - Assinar documento
+[2026-01-31 05:29:14] UNDO - Assinar documento
+[2026-01-31 05:29:16] REDO - Assinar documento
+[2026-01-31 05:29:17] REDO - Assinar documento
+[2026-01-31 05:29:17] REDO - Assinar documento
+[2026-01-31 05:29:17] REDO - Assinar documento
+[2026-01-31 05:29:17] REDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 05:29:17] REDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:29:18] REDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 05:29:19] UNDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 05:29:19] UNDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:29:20] UNDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 05:29:20] UNDO - Assinar documento
+[2026-01-31 05:29:20] UNDO - Assinar documento
+[2026-01-31 05:29:20] UNDO - Assinar documento
+[2026-01-31 05:29:20] UNDO - Assinar documento
+[2026-01-31 05:29:20] UNDO - Editar conteúdo
+[2026-01-31 05:29:21] UNDO - Editar conteúdo
+[2026-01-31 05:29:21] UNDO - Editar conteúdo
+[2026-01-31 05:29:21] REDO - Editar conteúdo
+[2026-01-31 05:29:22] REDO - Editar conteúdo
+[2026-01-31 05:29:22] REDO - Editar conteúdo
+[2026-01-31 05:29:22] REDO - Assinar documento
+[2026-01-31 05:29:23] UNDO - Assinar documento
+[2026-01-31 05:29:23] UNDO - Editar conteúdo
+[2026-01-31 05:29:24] UNDO - Editar conteúdo
+[2026-01-31 05:29:24] UNDO - Editar conteúdo
+[2026-01-31 05:29:24] UNDO - Editar conteúdo
+[2026-01-31 05:29:24] UNDO - Editar conteúdo
+[2026-01-31 05:29:24] UNDO - Editar conteúdo
+[2026-01-31 05:29:25] REDO - Editar conteúdo
+[2026-01-31 05:29:26] REDO - Editar conteúdo
+[2026-01-31 05:29:26] REDO - Editar conteúdo
+[2026-01-31 05:29:26] REDO - Editar conteúdo
+[2026-01-31 05:29:26] REDO - Editar conteúdo
+[2026-01-31 05:29:26] REDO - Editar conteúdo
+[2026-01-31 05:29:27] REDO - Assinar documento
+[2026-01-31 05:29:27] REDO - Assinar documento
+[2026-01-31 05:29:28] UNDO - Assinar documento
+[2026-01-31 05:29:28] UNDO - Assinar documento
+[2026-01-31 05:29:28] UNDO - Editar conteúdo
+[2026-01-31 05:29:28] UNDO - Editar conteúdo
+[2026-01-31 05:29:28] UNDO - Editar conteúdo
+[2026-01-31 05:29:29] UNDO - Editar conteúdo
+[2026-01-31 05:29:29] UNDO - Editar conteúdo
+[2026-01-31 05:29:29] UNDO - Editar conteúdo
+[2026-01-31 05:29:30] REDO - Editar conteúdo
+[2026-01-31 05:29:30] REDO - Editar conteúdo
+[2026-01-31 05:29:30] REDO - Editar conteúdo
+[2026-01-31 05:29:30] REDO - Editar conteúdo
+[2026-01-31 05:29:31] REDO - Editar conteúdo
+[2026-01-31 05:29:31] REDO - Editar conteúdo
+[2026-01-31 05:29:31] REDO - Assinar documento
+[2026-01-31 05:29:31] REDO - Assinar documento
+[2026-01-31 05:29:31] REDO - Assinar documento
+[2026-01-31 05:29:33] REDO - Assinar documento
+[2026-01-31 05:29:34] REDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 05:29:36] UNDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 05:29:36] UNDO - Assinar documento
+[2026-01-31 05:29:36] UNDO - Assinar documento
+[2026-01-31 05:29:36] UNDO - Assinar documento
+[2026-01-31 05:29:36] UNDO - Assinar documento
+[2026-01-31 05:29:36] UNDO - Editar conteúdo
+[2026-01-31 05:29:37] UNDO - Editar conteúdo
+[2026-01-31 05:29:37] UNDO - Editar conteúdo
+[2026-01-31 05:29:37] UNDO - Editar conteúdo
+[2026-01-31 05:29:37] UNDO - Editar conteúdo
+[2026-01-31 05:29:37] UNDO - Editar conteúdo
+[2026-01-31 05:29:39] REDO - Editar conteúdo
+[2026-01-31 05:29:39] REDO - Editar conteúdo
+[2026-01-31 05:29:39] REDO - Editar conteúdo
+[2026-01-31 05:29:40] REDO - Editar conteúdo
+[2026-01-31 05:29:40] REDO - Editar conteúdo
+[2026-01-31 05:29:40] REDO - Editar conteúdo
+[2026-01-31 05:29:40] REDO - Assinar documento
+[2026-01-31 05:29:40] REDO - Assinar documento
+[2026-01-31 05:29:41] REDO - Assinar documento
+[2026-01-31 05:29:41] REDO - Assinar documento
+[2026-01-31 05:29:41] REDO - MACRO: Macro: Alterar e Assinar
+[2026-01-31 05:29:41] REDO - MACRO: Macro: Priorizar (Urgente + Assinar)
+[2026-01-31 05:29:42] REDO - MACRO: Macro: Alterar e Assinar
