@@ -128,6 +128,7 @@ public class GerenciadorDocumentoModel {
 
         try {
             this.commandManager.execute(new ComandoPriorizar(this, doc));
+            this.commandManager.execute(new ComandoAssinar(this, doc));
             this.atual = this.getDocumentoAtual();
         } catch (FWDocumentException e) {
             throw e;

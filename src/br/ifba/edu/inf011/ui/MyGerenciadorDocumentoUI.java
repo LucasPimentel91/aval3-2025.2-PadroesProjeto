@@ -15,6 +15,7 @@ public class MyGerenciadorDocumentoUI extends AbstractGerenciadorDocumentosUI {
         comandos.addOperacao("➕ Criar Publico", e -> this.criarDocumento(Privacidade.PUBLICO));
         comandos.addOperacao("➕ Criar Privado", e -> this.criarDocumento(Privacidade.SIGILOSO));
         comandos.addOperacao("💾 Salvar", e -> this.salvarConteudo());
+        comandos.addOperacao("Salvar e Assinar", e -> this.salvarEAssinar());
         comandos.addOperacao("🔑 Proteger", e -> this.protegerDocumento());
         comandos.addOperacao("✍️ Assinar", e -> this.assinarDocumento());
         comandos.addOperacao("⏰ Priorizar", e -> this.priorizarDocumento());
@@ -49,6 +50,16 @@ public class MyGerenciadorDocumentoUI extends AbstractGerenciadorDocumentosUI {
             this.refreshUI();
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Erro ao salvar: " + e.getMessage());
+        }
+    }
+
+    protected void salvarEAssinar(){
+        try{
+            this.controller.macroAlterarEAssinar(this.atual, this.areaEdicao.getConteudo());
+            this.atual = this.controller.getDocumentoAtual();
+            this.refreshUI();
+        } catch (Exception e){
+            JOptionPane.showMessageDialog(this, "Erro ao salvar e assinar: " + e.getMessage());
         }
     }
 
